@@ -1,1 +1,44 @@
-/* You can add global styles to this file, and also import other style files */
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+@import '../node_modules/bootstrap-icons/font/bootstrap-icons.scss';
+
+* {
+    box-sizing: border-box;
+
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+
+    &:not(.no-animated):not(.slick-track):not(.slick-slide){
+        -moz-transition: all .15s ease-out;
+        -webkit-transition: all .15s ease-out;
+        -ms-transition: all .15s ease-out;
+        -o-transition: all .15s ease-out;
+        transition: all .15s ease-out;
+        &::after,
+        &::before{
+            -moz-transition: all .15s ease-out;
+            -webkit-transition: all .15s ease-out;
+            -ms-transition: all .15s ease-out;
+            -o-transition: all .15s ease-out;
+            transition: all .15s ease-out;
+        }
+    }
+}
+
+body {
+    background: #8e9eab;
+    background: -webkit-linear-gradient(to top, #eef2f3, #8e9eab);  
+    background: linear-gradient(to top, #eef2f3, #8e9eab);
+
+    height: 100vh;;
+}
+
+li {
+    &.active {
+        background-color: gray !important;
+        border-color: gray !important;
+    }
+} 
+
+    
